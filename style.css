@@ -13,6 +13,10 @@ h2{
     font-weight: bold;
   }
 /**************************************HEADER************************************/
+.fa-angle-down:before {
+    padding-right: 15px;
+    
+}
 .header {
     background-color: #1d173a;
     color: white;
@@ -279,7 +283,7 @@ html .btn-full:focus {
 }
 #about-us-section h5{
     text-align: center;
-    padding: 0px 10px 40px 10px;
+    padding: 10px 10px 10px 10px;
     font-weight: bold;
     font-size: 1rem;
 }
@@ -312,7 +316,6 @@ html .btn-full:focus {
     font-weight: bold;
 }
 #get-started-section button {
-    
     width: 80%;
     display: block;
     margin: auto;
@@ -341,6 +344,7 @@ footer h4 {
 }
 footer p {
     text-align: center;
+    margin-bottom: 0;
 }
 .social-icons {
     display: flex;
@@ -410,14 +414,42 @@ a.d-flex.d-lg-none.pb-md-3.collapsed {
 .footer-links .nav-links {
     text-align: center;
 }
-
-
+/******************************************** MEDIA QUERIES **************************************************/
 
 /******************************************** MIN-WIDTH 1200************************************************/
 @media (min-width:1200px) {
     #about-us-section .btn-full {
         font-size: 1.2rem;
     }
+    .separator-span {
+        padding: 10px;
+    }
+    .header-login span {
+        font-size: 1.2rem;
+    }
+    .smaller-social-div .social-icons {
+        border: none; 
+        margin: 0;
+        padding: 0;
+        font-size: 15px;       
+    }
+    .social-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #433975;
+    }
+    .social-div p,
+    .social-div h4{
+        margin-bottom: 0;
+    }
+    .smaller-social-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
 /******************************************** MIN-WIDTH 991************************************************/
 @media (min-width:991px) {
@@ -428,6 +460,7 @@ a.d-flex.d-lg-none.pb-md-3.collapsed {
     }
     .header-links a.nav-links{
         font-size: .9rem;
+        margin: auto;
     }
     .nav-item .nav-link {
         background-color: #1d173a;
@@ -468,6 +501,9 @@ a.d-flex.d-lg-none.pb-md-3.collapsed {
     #about-us-section .about-us-h2 {
         font-size: 3em;
     }
+    #get-started-section button {
+        width: 18%;
+    }
    
   }
   /******************************************** MIN-WIDTH 768 ************************************************/
@@ -499,17 +535,20 @@ a.d-flex.d-lg-none.pb-md-3.collapsed {
         width: 30%;
     }
     #about-us-section .btn-full {
-        width: 30%;
+        width: 20%;
     }
     #about-us-section p {
         font-size: 1rem;
     }
-    #get-started-section button {
-        width: 25%;
+    .social-icons {
+        font-size: 25px;
     }
 }
  /******************************************** MIN-WIDTH 576 ************************************************/
 @media (min-width:576px) {
+    nav .container a {
+        font-size: 1rem;
+    }
     .testimonial-image {
         width: 40%;
     }
@@ -527,12 +566,3 @@ a.d-flex.d-lg-none.pb-md-3.collapsed {
         padding-top: 20px;
     }
 }
-
-
-  /*
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    */
