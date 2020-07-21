@@ -526,23 +526,28 @@ a.d-flex.d-lg-none.pb-md-3.collapsed {
   .fa-check-circle:before {
        display: inline;
   }
-    .hero-img-label {
-        display: flex;
-        justify-content: space-around;
-        width: 50%;
-    }
-    img.d-block {
-        width: 30%;
-    }
-    #about-us-section .btn-full {
-        width: 20%;
-    }
-    #about-us-section p {
-        font-size: 1rem;
-    }
-    .social-icons {
-        font-size: 25px;
-    }
+  .hero-img-label {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  img.d-block {
+    width: 30%;
+  }
+  #about-us-section .btn-full {
+    width: 20%;
+  }
+  #about-us-section p {
+    font-size: 1rem;
+  }
+  .social-icons {
+    font-size: 25px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+   margin: 0 25%;
+  }
+
 }
  /******************************************** MIN-WIDTH 576 ************************************************/
 @media (min-width:576px) {
